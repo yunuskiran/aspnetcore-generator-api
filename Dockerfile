@@ -14,4 +14,5 @@ RUN dotnet publish api/api.csproj -o /publish
 
 FROM microsoft/dotnet:aspnetcore-runtime
 COPY --from=build-env /publish /publish 
+WORKDIR /publish
 ENTRYPOINT [ "dotnet","api.dll" ]
