@@ -12,4 +12,9 @@ services:
     environment:
       - SERVER_URL=http://server:8111
       - AGENT_NAME=regular_agent
-  
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  teamcity-server-datadir:
+  teamcity-server-logs:
