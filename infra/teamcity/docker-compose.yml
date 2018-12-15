@@ -12,8 +12,4 @@ services:
     environment:
       - SERVER_URL=http://server:8111
       - AGENT_NAME=regular_agent
-  teamcity-minimal-agent:
-    image: jetbrains/teamcity-minimal-agent
-    environment:
-      - SERVER_URL=http://server:8111
-      - AGENT_NAME=minimal_agent
+  
