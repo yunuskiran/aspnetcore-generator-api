@@ -10,7 +10,7 @@ using Xunit;
 
 
 namespace integration
-{
+{   
     public class EmailTests
     {
         public const string GeneratorApiRoot = "http://generator";
@@ -49,7 +49,7 @@ namespace integration
                     .Which.Should().BeOfType<JArray>()
                     .Which.First.Should().HaveElement("Raw")
                     .Which.Should().HaveElement("From")
-                    .Which.Should().BeEquivalentTo("generator@generate.com");
+                    .Which.Should().BeEquivalentTo("yunuskiran@generate.com");
             }
         }
     }
